@@ -1,0 +1,293 @@
+@charset 'utf-8';
+
+@font-face{
+    font-family: karl;
+    src: url('Karl Geoff Personal use.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.section-1 .title{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .title h1{
+    font-family: karl;
+    font-size: 7em;
+    font-weight: 400;
+    text-align: center;
+}
+.section-1 .box-img{
+    width: 50%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 0% 0% 0% 10%;
+    box-shadow: 15px -6px 33px gray;
+}
+.section-1 .box-img .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0% 0% 0% 10%;
+}
+.section-1 .box-img .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0% 0% 0% 10%;
+}
+@media(max-width: 850px){
+    .section-1{
+        height: 60vh;
+    }
+    .section-1 .title{
+        width: 55%;
+    }
+    .section-1 .box-img{
+        width: 45%;
+    }
+}
+@media (max-width: 600px){
+    .section-1 .box-img{
+        box-shadow: 9px -6px 33px gray;
+    }
+    .section-1 .title h1{
+        font-size: 5em;
+    }
+}
+
+.section-1.reverse{
+    flex-direction: row-reverse;
+    margin-top: 5%;
+}
+.section-1.reverse .box-img{
+    border-radius: 0% 10% 10% 0%;
+    box-shadow: 15px -6px 33px gray;
+}
+.section-1.reverse .box-img .imgBx{
+    border-radius: 0% 10% 10% 0%;
+}
+.section-1.reverse .box-img .imgBx img{
+    border-radius: 0% 10% 10% 0%;
+}
+.section-1.reverse-2 .box-img{
+    border-radius: 10% 0% 0% 10%;
+}
+.section-1.reverse-2 .box-img .imgBx{
+    border-radius: 10% 0% 0% 10%;
+}
+.section-1.reverse-2 .box-img .imgBx img{
+    border-radius: 10% 0% 0% 10%;
+}
+
+
+.wave{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+}
+.wave .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+.wave .gifs{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wave .gifs .box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.wave .gifs .box img{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+.wave .gifs .box ._1{
+    transform: rotate(-11deg);
+}
+.wave .gifs .box ._3{
+    transform: rotate(-11deg)
+}
+.section-2{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    margin-bottom: 5%;
+}
+@media(max-width: 600px){
+    .section-2{
+        margin-bottom: 1%;
+    }
+    .wave .gifs .box img{
+        width: 60px;
+        height: 60px;
+        margin: 25px;
+    }
+}
+.section-2 .title h2{
+    font-family: karl;
+    font-size: 4em;
+    font-weight: 400;
+    text-align: center;
+}
+#slider, #slider_2, #slider_3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.subcontainer{
+    width: 100%;
+    margin: auto;
+}
+.slide-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.box{
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+}
+.box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10%;
+}
+.box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.section-3{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-3 .box-1{
+    width: 35%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 0% 10% 0% 0%;
+    box-shadow: 15px -6px 33px gray;
+}
+.section-3 .box-1 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10%;
+}
+.section-3 .box-1 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0% 10% 0% 0%;
+}
+.section-3 .title{
+    width: 30%;
+}
+.section-3 .title h2{
+    font-family: karl;
+    font-size: 4em;
+    font-weight: 400; 
+    text-align: center;
+}
+.section-3 .box-2{
+    width: 35%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 10% 0% 0% 0%;
+    box-shadow: -15px -6px 33px gray;
+}
+.section-3 .box-2 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 10%;
+}
+.section-3 .box-2 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:10% 0% 0% 0%;
+}
+@media(max-width: 600px){
+    .section-3{
+        height: 50vh;
+    }
+    .section-3 .box-1{
+        width: 35%;
+        box-shadow: 2px -6px 33px gray;
+    }
+    .section-3 .box-2{
+        width: 35%;
+        box-shadow: -2px -6px 33px gray;
+    }
+
+}
